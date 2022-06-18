@@ -1,0 +1,5 @@
+
+footer.page-footer {
+    background-color: var(--main-color);
+    padding-top: unset;
+}

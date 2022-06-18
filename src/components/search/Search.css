@@ -1,0 +1,9 @@
+.search {
+    padding: var(--default-padding);
+}
+
+.search > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
