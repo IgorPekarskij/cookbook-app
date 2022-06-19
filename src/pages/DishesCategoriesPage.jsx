@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { getListCategories } from "../api/api";
-import { Preloader } from "../components/preloader/Preloader";
-import { CardsList } from "../components/cardsList/CardsList";
-import { Search } from "../components/search/Search";
+import { Preloader } from "../components/preloader";
+import { CardsList } from "../components/cardsList";
+import { Search } from "../components/search";
 
 export function DishesCategoriesPage() {
     const [categoriesList, setCategories] = useState([]);

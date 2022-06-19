@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { CustomButton } from "../components/customButton/CustomButton";
+import { CustomButton } from "../components/customButton";
 import { getFoodById } from "../api/api";
-import { DishDetails } from "../components/dishDetails/DishDetails";
+import { DishDetails } from "../components/dishDetails";
 
 export function DishDetailPage() {
     const [dish, setDish] = useState({});

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { getFoodListByCategoryName } from "../api/api";
-import { Preloader } from "../components/preloader/Preloader";
-import { CardsList } from "../components/cardsList/CardsList";
-import { CustomButton } from "../components/customButton/CustomButton";
-import { Search } from "../components/search/Search";
+import { Preloader } from "../components/preloader";
+import { CardsList } from "../components/cardsList";
+import { CustomButton } from "../components/customButton";
+import { Search } from "../components/search";
 
 export function CategoryDishesPage() {
     const [searchParams] = useSearchParams();

@@ -1,17 +1,25 @@
 import { Link } from "react-router-dom";
-import "./Header.css";
+import logo from "./recipes_book_logo.svg";
+import styles from "./Header.module.css";
 
 export function Header() {
     return (
-        <div className="navigation">
+        <div className={styles.navigation}>
             <nav>
-                <div className="nav-wrapper">
-                    <Link to="/" className="brand-logo logo-image">
-                        <img
-                            src="/cookbook-app/recipes_book_logo.svg"
-                            alt="Recipes Book"
-                            width="55px"
-                        />
+                <div
+                    className={[
+                        "nav-wrapper",
+                        styles["header-background"],
+                    ].join(" ")}
+                >
+                    <Link
+                        to="/"
+                        className={[
+                            "brand-logo",
+                            styles["logo-image-align"],
+                        ].join(" ")}
+                    >
+                        <img src={logo} alt="Recipes Book" width="55px" />
                         COOKBOOK
                     </Link>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">

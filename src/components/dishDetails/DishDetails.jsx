@@ -1,4 +1,4 @@
-import "./DishDetail.css";
+import styles from "./DishDetail.module.css";
 
 export function DishDetails(props) {
     const {
@@ -23,10 +23,10 @@ export function DishDetails(props) {
     };
 
     return (
-        <div className="dish-details-content">
+        <div className={styles["dish-details-content"]}>
             <h1>{strMeal}</h1>
             <img src={strMealThumb} alt={strMeal} />
-            <div className="dish-data">
+            <div className={styles["dish-data"]}>
                 <p>
                     <strong>Category: </strong> {strCategory}
                 </p>
@@ -38,7 +38,7 @@ export function DishDetails(props) {
                 ) : null}
             </div>
             <p>{strInstructions}</p>
-            <div className="dish-data">
+            <div className={styles["dish-data"]}>
                 <h5>Ingredients</h5>
                 <table>
                     <thead>
@@ -63,11 +63,10 @@ export function DishDetails(props) {
                 </table>
             </div>
             {strYoutube ? (
-                <div className="dish-data">
+                <div className={styles["video-container"]}>
                     <h5>Video recipe</h5>
                     <iframe
-                        width="500px"
-                        height="300px"
+                        className={styles["video-content"]}
                         src={`https://www.youtube.com/embed/${
                             strYoutube.split("v=")[1]
                         }`}

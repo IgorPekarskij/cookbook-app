@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import { DishesCategoriesPage } from "./pages/DishesCategoriesPage";
-import { CategoryDishesPage } from "./pages/CategoryDishesPage";
-import { NotFoundPage } from "./pages/NotFoundPage";
-import { Layout } from "./components/layout/Layout";
-import { DishDetailPage } from "./pages/DishDetailPage";
-import { About } from "./pages/About";
-import { Contacts } from "./pages/Contacts";
+import { DishesCategoriesPage } from "../../pages/DishesCategoriesPage";
+import { CategoryDishesPage } from "../../pages/CategoryDishesPage";
+import { NotFoundPage } from "../../pages/NotFoundPage";
+import { Layout } from "../layout";
+import { DishDetailPage } from "../../pages/DishDetailPage";
+import { About } from "../../pages/About";
+import { Contacts } from "../../pages/Contacts";
 
-function App() {
+export function App() {
     return (
         <>
             <Routes>
@@ -23,5 +23,3 @@ function App() {
         </>
     );
 }
-
-export default App;

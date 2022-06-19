@@ -1,9 +1,9 @@
-import "./CustomButton.css";
+import styles from "./CustomButton.module.css";
 
 export function CustomButton({ classes = [], onClick, children }) {
-    const styles = ["btn-align-default", ...classes];
+    const stylesArray = [styles["btn-align-default"], ...classes];
     return (
-        <button className={styles.join(" ")} onClick={() => onClick()}>
+        <button className={stylesArray.join(" ")} onClick={() => onClick()}>
             {children}
         </button>
     );

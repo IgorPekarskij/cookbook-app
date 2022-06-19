@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Card.css";
+import styles from "./Card.module.css";
 
 export function Card(props) {
     const {
@@ -10,12 +10,15 @@ export function Card(props) {
         linkTo = "/",
     } = props;
 
+    const containerStyles = ["card", styles["card-container"]];
+    const contentStyles = ["card-content", styles["card-content"]];
+
     return (
-        <div className="card card-container">
+        <div className={containerStyles.join(" ")}>
             <div className="card-image">
                 <img src={image} alt={title} />
             </div>
-            <div className="card-content">
+            <div className={contentStyles.join(" ")}>
                 <span className="card-title">{title}</span>
                 {description ? (
                     <p>

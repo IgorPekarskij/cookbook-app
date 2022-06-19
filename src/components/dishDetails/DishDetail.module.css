@@ -1,0 +1,45 @@
+.dish-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dish-details-content > img {
+    max-width: 65%;
+}
+
+.dish-details-content > h1 {
+    margin-top: 0;
+}
+
+.dish-details-content > p {
+    text-align: justify;
+}
+
+.dish-details-content .dish-data {
+    width: 100%;
+    
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 350px;
+    margin-bottom: 1rem;
+}
+
+.video-container > h5 {
+    max-height: 4rem;
+}
+
+.video-content {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    min-width: 300px;
+    height: calc(100% - 4rem);
+}

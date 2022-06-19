@@ -5,11 +5,11 @@
     width: 100%;
 }
 
-nav .nav-wrapper {
+.header-background {
     background-color: var(--main-color);
 }
 
-nav .brand-logo {
+nav .logo-image-align {
     display: flex;
     align-items: center;
     height: 100%;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CustomButton } from "../customButton/CustomButton";
-import "./Search.css";
+import styles from "./Search.module.css";
 
 export function Search({ cb }) {
     const [searchValue, setSearchValue] = useState("");
@@ -10,8 +10,10 @@ export function Search({ cb }) {
         }
     };
 
+    const stylesClasses = ["input-field", "col", "s12", styles.search];
+
     return (
-        <div className="search input-field col s12">
+        <div className={stylesClasses.join(" ")}>
             <input
                 type="search"
                 name="search"
