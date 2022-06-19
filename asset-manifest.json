@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/cookbook-app/static/css/main.a13c67f6.css",
-    "main.js": "/cookbook-app/static/js/main.b4f9f533.js",
+    "main.css": "/cookbook-app/static/css/main.bf59bc89.css",
+    "main.js": "/cookbook-app/static/js/main.c1facb13.js",
+    "static/media/recipes_book_logo.svg": "/cookbook-app/static/media/recipes_book_logo.8af62eff2f6732e6bb0ff58887756d64.svg",
     "index.html": "/cookbook-app/index.html",
-    "main.a13c67f6.css.map": "/cookbook-app/static/css/main.a13c67f6.css.map",
-    "main.b4f9f533.js.map": "/cookbook-app/static/js/main.b4f9f533.js.map"
+    "main.bf59bc89.css.map": "/cookbook-app/static/css/main.bf59bc89.css.map",
+    "main.c1facb13.js.map": "/cookbook-app/static/js/main.c1facb13.js.map"
   },
   "entrypoints": [
-    "static/css/main.a13c67f6.css",
-    "static/js/main.b4f9f533.js"
+    "static/css/main.bf59bc89.css",
+    "static/js/main.c1facb13.js"
   ]
 }
