@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import { App } from "./components/app";
+import { APP_NAME } from "./config";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <BrowserRouter basename="/cookbook-app">
+        <BrowserRouter basename={`/${APP_NAME}`}>
             <App />
         </BrowserRouter>
     </React.StrictMode>
