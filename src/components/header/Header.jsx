@@ -20,7 +20,7 @@ export function Header() {
                         ].join(" ")}
                     >
                         <img src={logo} alt="Recipes Book" width="55px" />
-                        COOKBOOK
+                        COOKBOOKSSS
                     </Link>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li>
